@@ -306,7 +306,10 @@ int main() {
                         resultTime = duration_cast<nanoseconds>(end - start);
 
                         cout << "Двусвязный список успешно создал. Затрачено времени: " << resultTime.count() << endl;
-                        listCreated = true; break;
+                        listCreated = true; 
+                        cin.clear();
+                        cin.ignore();
+                        break;
                     }
                     case 0: {
                         running = false;
